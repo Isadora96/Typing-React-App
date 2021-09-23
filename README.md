@@ -1,3 +1,22 @@
+# Typing React App
+
+![image](https://user-images.githubusercontent.com/80006401/134590066-bb22cb26-fa4a-42a6-a869-ccb9a4da4126.png)
+
+This simple react project will show you how many letters you can type in 10 seconds. If you want a challenge a sentence is provided from an API.
+
+## Build With
+
+- React Hook
+   - useState
+   - useEffect
+   - useRef
+
+## Links
+
+-[Live](https://typing-react-app.netlify.app/)
+
+-[API](https://api.adviceslip.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
