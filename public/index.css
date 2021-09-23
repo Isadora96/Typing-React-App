@@ -1,0 +1,104 @@
+html, body {
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: mediumspringgreen;
+  margin:0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+body {
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background: #a80020;
+  background: #00b800;
+  padding: .7em 1.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+h1 {
+  font-size: 1.3rem;
+  text-align:center;
+  padding: 0 1em;
+}
+.accent {
+  color: red;
+}
+
+textarea {
+  font-family: 'Press Start 2P', cursive;
+  border: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  outline: none;
+  height: 200px;
+  background: #00b800;
+}
+
+textarea:disabled {
+  background-color: #a5a2a2;
+}
+
+.phrase {
+  font-size: .9rem;
+  line-height: 1.6;
+  padding: 0 2em;
+}
+
+@media (min-width: 500px){
+  .typing h1 {
+  overflow: hidden;
+  border-right: .15em solid mediumspringgreen;
+  white-space: nowrap;
+  letter-spacing: .10em;
+  max-width: 270px; 
+  margin: 1em auto;
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-animation .5s step-end infinite;
+  }
+
+@keyframes typing {
+  from { width: 0 }
+  to  { width:  100% }
+}
+
+@keyframes blink-animation {
+  from , to { border-color: transparent }
+  50% { border-color: mediumspringgreen }
+}
+  
+  textarea {
+    padding: 1.3em .7em;
+  }
+
+}
+
+@media (min-width: 700px) {
+  .typing h1 {
+    font-size: 2rem;
+    max-width: 420px; 
+  }
+
+  .phrase {
+    font-size: 1.4rem;
+  }
+}
